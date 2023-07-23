@@ -1,5 +1,8 @@
-//= link_tree ../images
-//= link_directory ../stylesheets .css
-//= link_tree ../../javascript .js
-//= link_tree ../../../vendor/javascript .js
-//= link rails-ujs
+//= require_tree .
+//= link controllers.js
+ //= link popper.js
+ //= link bootstrap.js
+ //= link bootstrap.min.css
+ //= link bootstrap.min.js
+//= link_directory ../../javascript .js
+//= link custom.css

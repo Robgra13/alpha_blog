@@ -1,0 +1,51 @@
+@import 'bootstrap';
+
+.navbar {
+background-color: #000000 !important;
+}
+
+.nav-link{
+  color: #FFFFFF !important;
+}
+
+.navbar-brand {
+  color: #FFFFFF !important;
+font-size: 3rem;
+}
+
+#logo {
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  float: left;
+  font-weight: bold;
+  font-size: 1.7em
+
+}
+
+#home-container{
+  margin-top: 25px;
+}
+
+.jumbotron {
+  background-image: asset-url('jumbotron.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: #D0D0D0;
+}
+
+
+h1 {
+color: #000000;
+}
