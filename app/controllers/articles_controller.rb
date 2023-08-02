@@ -34,7 +34,7 @@ class ArticlesController < ApplicationController
   def update
 
     if @article.update(article_params)
-      flash[:success] = "Article was updated successfully."
+      flash[:notice] = "Article was updated successfully."
       redirect_to @article
     else
       render :edit, status: :unprocessable_entity
@@ -54,7 +54,7 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    (params.require(:article).permit(:title, :description))
+    params.require(:article).permit(:title, :description, category_ids: [])
   end
 
   def require_same_user
